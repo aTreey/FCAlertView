@@ -78,6 +78,8 @@
 @property (nonatomic, retain) NSAttributedString *attributedSubTitle;
 @property (nonatomic, retain) UIFont *titleFont;
 @property (nonatomic, retain) UIFont *subtitleFont;
+@property (nonatomic, assign) NSTextAlignment subTitleAlignment;
+@property (nonatomic, assign) NSInteger subTitleLineNumber;
 
 // AlertView Background
 

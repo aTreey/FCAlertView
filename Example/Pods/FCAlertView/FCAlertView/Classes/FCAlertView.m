@@ -373,8 +373,12 @@
     descriptionLabel.textAlignment = NSTextAlignmentCenter;
     descriptionLabel.adjustsFontSizeToFitWidth = NO;
     
-    descriptionLabel.numberOfLines = 0;
+    descriptionLabel.numberOfLines = _subTitleLineNumber;
     descriptionLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+    
+    if (_subTitleAlignment) {
+        descriptionLabel.textAlignment = _subTitleAlignment;
+    }
         
     // Re-adjusting Frames based on height of text - Requirement is to not have over 6 lines of text
     
