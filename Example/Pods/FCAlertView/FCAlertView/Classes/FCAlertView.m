@@ -373,9 +373,13 @@
     descriptionLabel.textAlignment = NSTextAlignmentCenter;
     descriptionLabel.adjustsFontSizeToFitWidth = NO;
     
+    
+    // 设置换行
     descriptionLabel.numberOfLines = _subTitleLineNumber;
     descriptionLabel.lineBreakMode = NSLineBreakByTruncatingTail;
     
+    
+    // 设置对齐方式
     if (_subTitleAlignment) {
         descriptionLabel.textAlignment = _subTitleAlignment;
     }
